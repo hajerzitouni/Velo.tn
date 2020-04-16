@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="containerPanier" prefHeight="334.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.PanierController">
+   <children>
+      <AnchorPane fx:id="btnAjouter" layoutX="110.0" layoutY="59.0" prefHeight="353.0" prefWidth="626.0">
+         <children>
+      <Label fx:id="nomUtilisateur" layoutX="259.0" layoutY="31.0" prefHeight="35.0" prefWidth="171.0" style="-fx-background-image: #e6f7ff;" text="Mon Panier" textFill="#0c8bae">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <TableView fx:id="listePanier" layoutX="31.0" layoutY="106.0" prefHeight="179.0" prefWidth="470.0" style="-fx-background-color: #e6f7ff;" AnchorPane.bottomAnchor="68.0" AnchorPane.leftAnchor="31.0" AnchorPane.rightAnchor="125.0" AnchorPane.topAnchor="106.0">
+        <columns>
+          <TableColumn fx:id="quantiteProduit" prefWidth="133.0" text="Quantite" />
+            <TableColumn fx:id="incQt" prefWidth="93.0" text="+" />
+            <TableColumn fx:id="decQt" prefWidth="84.0" text="-" />
+            <TableColumn fx:id="supprimerProduits" prefWidth="159.0" text="Supprimer" />
+        </columns>
+      </TableView>
+      <Button fx:id="validerCommande" layoutX="226.0" layoutY="307.0" mnemonicParsing="false" onAction="#validerCommande" style="-fx-background-color: #52eb85;" text="Valider la commande" />
+      <ImageView fitHeight="49.0" fitWidth="106.0" layoutX="188.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/p11.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
+   </children>
+</AnchorPane>

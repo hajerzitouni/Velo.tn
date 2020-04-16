@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="678.0" style="-fx-background-color: #3D4956;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ShowlocationController">
+   <children>
+      <TableView fx:id="table" layoutX="5.0" layoutY="85.0" prefHeight="215.0" prefWidth="435.0">
+        <columns>
+          <TableColumn fx:id="namecomp" prefWidth="95.0" text="location" />
+            <TableColumn fx:id="start" prefWidth="90.0" text="start" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" visible="false" />
+            <TableColumn fx:id="end" prefWidth="90.0" text="end" />
+            <TableColumn fx:id="velo_id" prefWidth="74.0" text="velo_i" />
+          <TableColumn fx:id="prix" prefWidth="94.0" text="prix" />
+        </columns>
+      </TableView>
+      <Label layoutX="34.0" layoutY="30.0" text="location" textFill="#fcfafa">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="delete" layoutX="498.0" layoutY="270.0" mnemonicParsing="false" onAction="#delete" style="-fx-background-color: green;" text="Afficher assurance" textFill="#f2efef">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="retour" layoutX="497.0" layoutY="384.0" mnemonicParsing="false" onAction="#retour" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: grey;" text="Annuler" textFill="#fffdfd">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <AnchorPane layoutX="464.0" layoutY="57.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="25.0" layoutY="22.0" prefHeight="20.0" prefWidth="156.0" text="Votre assurace est" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tablea" layoutX="13.0" layoutY="81.0" prefHeight="73.0" prefWidth="177.0">
+              <columns>
+                <TableColumn fx:id="asuranceloc" prefWidth="199.0" text="assurance" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button fx:id="calculprix" layoutX="498.0" layoutY="307.0" mnemonicParsing="false" onAction="#calculprix" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: blue;" text="Afficher prix" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+      <Button fx:id="confirmer" layoutX="498.0" layoutY="344.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="30.0" prefWidth="133.0" style="-fx-background-color: red;" text="confirmer" textFill="#fff8f8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

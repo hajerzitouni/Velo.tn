@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="holderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidev.controllers.ListRecuAdminController">
+   <children>
+      <Label layoutX="238.0" layoutY="30.0" prefHeight="20.0" prefWidth="108.0" text="Liste des Reçus">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="128.0" layoutY="91.0" prefHeight="340.0" prefWidth="394.0" stylesheets="@styles.css">
+        <columns>
+          <TableColumn fx:id="idevent" prefWidth="110.0" text="ID_Event" />
+          <TableColumn fx:id="iduser" prefWidth="116.0" text="ID_User" />
+            <TableColumn fx:id="prixrecu" prefWidth="167.0" text="Prix Reçu" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="714.0" prefWidth="848.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.PaiementController">
+   
+   <children>
+      <VBox layoutX="40.0" layoutY="16.0" prefHeight="469.0" prefWidth="744.0">
+         <children>
+            <JFXTextField fx:id="email" prefHeight="71.0" prefWidth="744.0" promptText="Votre email" />
+            <JFXTextField fx:id="numeroCarte" prefHeight="79.0" prefWidth="744.0" promptText="Numero de carte bancaire " />
+            <JFXTextField fx:id="montant" prefHeight="63.0" prefWidth="744.0" promptText="Montant a payer " />
+            <JFXTextField fx:id="MoisValidite" focusColor="#c59f54" prefHeight="58.0" prefWidth="600.0" promptText="MM" />
+            <JFXTextField fx:id="AnneeValidite" focusColor="#c59f54" prefHeight="58.0" prefWidth="600.0" promptText="YY" />
+            <JFXPasswordField fx:id="ccvTextField" prefHeight="58.0" prefWidth="600.0" promptText="CCV">
+               <padding>
+                  <Insets left="5.0" right="20.0" />
+               </padding>
+            </JFXPasswordField>
+         </children>
+      </VBox>
+      <JFXButton fx:id="btnAnnuler" buttonType="RAISED" layoutX="695.0" layoutY="531.0" onAction="#AnnulerFunction" ripplerFill="WHITE" style="-fx-background-color: #75D032; -fx-border-radius: 100%;" text="Annuler" textFill="WHITE">
+         <font>
+            <Font name="Gadugi" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="63.0" fitWidth="119.0" layoutX="58.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pidev/reesources/cb-visa-mastercard.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnValider" layoutX="328.0" layoutY="538.0" onAction="#validerFunction" prefHeight="37.0" prefWidth="209.0" style="-fx-background-color: blue;" text="Payer" textFill="WHITE">
+         <font>
+            <Font name="Gadugi" size="16.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="92.0" fitWidth="93.0" layoutX="374.0" layoutY="441.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../pidev/reesources/3b9a02d7c70d2252d3e3bb39f3678d50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

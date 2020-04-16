@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.modifierproduitController">
+   <children>
+      <AnchorPane layoutX="-2.0" layoutY="-2.0" onMouseEntered="#afficherImage" prefHeight="510.0" prefWidth="467.0">
+         <children>
+            <AnchorPane layoutX="14.0" layoutY="82.0" prefHeight="292.0" prefWidth="377.0">
+               <children>
+                  <AnchorPane fx:id="btnAjouter" layoutX="-11.0" layoutY="-71.0" prefHeight="356.0" prefWidth="442.0">
+                     <children>
+                        <Label layoutX="131.0" layoutY="52.0" text="Modifier Produit" textFill="#0c8bae">
+                           <font>
+                              <Font name="System Bold Italic" size="12.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="44.0" layoutY="123.0" text="Nom " />
+                        <TextField fx:id="tfnbrcomp111" layoutX="140.0" layoutY="119.0" />
+                        <Label layoutX="36.0" layoutY="179.0" text="Quantité" />
+                        <TextField fx:id="tfnbrcomp11" layoutX="140.0" layoutY="175.0" />
+                        <Label layoutX="36.0" layoutY="232.0" prefHeight="17.0" prefWidth="67.0" text="prix" />
+                        <TextField fx:id="tfnbrcomp1" layoutX="140.0" layoutY="228.0" />
+                        <Button id="btnAjouter" fx:id="btnAjout" layoutX="60.0" layoutY="292.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="247.0" style="-fx-background-color: #52eb85;" text="Modifier" />
+                        <TableView fx:id="listeProduits" layoutX="347.0" layoutY="36.0" onMouseClicked="#afficherImage" prefHeight="301.0" prefWidth="345.0">
+                           <columns>
+                              <TableColumn fx:id="nomProduit" prefWidth="135.0" text="Nom du Produit" />
+                              <TableColumn fx:id="prixProduit" prefWidth="117.0" text="Prix" />
+                              <TableColumn fx:id="quantite" prefWidth="92.0" text="Quantité" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <ImageView fx:id="imageview" fitHeight="75.0" fitWidth="168.0" layoutX="104.0" layoutY="363.0" onMouseClicked="#afficherImage" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="465.0" layoutY="369.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="149.0" style="-fx-background-color: #e01d1d;" text="Supprimer" textFill="#242222" />
+   </children>
+</Pane>

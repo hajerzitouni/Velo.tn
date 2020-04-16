@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="793.0" prefWidth="1198.0" style="-fx-background-image: ; -fx-background-color: 10000;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AfficheCoursController">
+   <children>
+      <TableView fx:id="table" layoutX="48.0" layoutY="125.0" onMouseClicked="#afficherImage" prefHeight="281.0" prefWidth="854.0">
+        <columns>
+          <TableColumn fx:id="namecomp" prefWidth="135.0" text="Niveau" />
+            <TableColumn fx:id="start" prefWidth="94.0" text="Date" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" visible="false" />
+            <TableColumn fx:id="end" prefWidth="510.0" text="Lieu" />
+            <TableColumn fx:id="nbrparticipant" prefWidth="305.0" text="Prix" />
+        </columns>
+      </TableView>
+      <Label layoutX="34.0" layoutY="30.0" text="Cours" textFill="#fcfafa">
+         <font>
+            <Font name="System Italic" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="edit" layoutX="758.0" layoutY="575.0" onAction="#edit" prefHeight="37.0" prefWidth="119.0" style="-fx-background-color: blue;" text="Edit" textFill="WHITE">
+         <font>
+            <Font name="Gadugi" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="searchField" focusColor="#6f3a3a" labelFloat="true" layoutX="649.0" layoutY="13.0" maxWidth="382.0" minWidth="168.0" prefHeight="36.0" prefWidth="382.0" promptText="Rechercher " unFocusColor="#b24646">
+         <font>
+            <Font name="Blackadder ITC" size="26.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="nouveau" buttonType="RAISED" layoutX="733.0" layoutY="495.0" onAction="#nouveau" prefHeight="37.0" prefWidth="169.0" style="-fx-background-color: #00A65A;" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="delete" buttonType="RAISED" layoutX="737.0" layoutY="667.0" onAction="#deletecours" prefHeight="37.0" prefWidth="162.0" style="-fx-background-color: #BB0B0B;" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="Roboto Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fx:id="imageViewAdd" fitHeight="326.0" fitWidth="696.0" layoutX="57.0" layoutY="436.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

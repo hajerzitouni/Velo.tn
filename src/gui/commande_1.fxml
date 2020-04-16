@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CommandeController">
+   <children>
+      <AnchorPane fx:id="btnAjouter" layoutY="-1.0" prefHeight="413.0" prefWidth="736.0">
+    <children>
+      
+     <Label layoutX="143.0" layoutY="56.0" text="num Tel" />
+      <Label layoutX="150.0" layoutY="109.0" text="email" />
+      <Label layoutX="152.0" layoutY="155.0" text="pays" />
+      <Label layoutX="154.0" layoutY="205.0" text="ville" />
+      <Label layoutX="131.0" layoutY="249.0" text="code postale" />
+      <TextField fx:id="numTel" layoutX="226.0" layoutY="52.0" />
+      <TextField fx:id="email" layoutX="226.0" layoutY="96.0" />
+      <TextField fx:id="pays" layoutX="226.0" layoutY="151.0" />
+      <TextField fx:id="ville" layoutX="226.0" layoutY="201.0" />
+      <TextField fx:id="codePostale" layoutX="226.0" layoutY="245.0" />
+      
+     
+      <Button id="Button" fx:id="btnAjout" layoutX="263.0" layoutY="326.0" mnemonicParsing="false" onAction="#passerCommande" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: #52eb85;" text="Ajouter" textFill="#fcf9f9" /> 
+     
+     <ImageView fitHeight="44.0" fitWidth="51.0" layoutX="195.0" layoutY="313.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/p2.jpg" />
+         </image>
+      </ImageView>
+         </children>
+</AnchorPane>
+   </children>
+</AnchorPane>

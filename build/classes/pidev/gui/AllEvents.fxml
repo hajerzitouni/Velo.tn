@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="holderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="793.0" prefWidth="991.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidev.controllers.AllEventsController">
+   <children>
+      <AnchorPane layoutX="165.0" layoutY="39.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="341.0" prefWidth="387.0" />
+      <VBox fx:id="vbox1" alignment="TOP_CENTER" layoutX="76.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="355.0" spacing="6.0" style="-fx-border-radius: 0; -fx-background-color: #FFFFFF;" stylesheets="@event.css">
+         <children>
+            <ImageView fx:id="image1" fitHeight="140.0" fitWidth="245.0" nodeOrientation="INHERIT" pickOnBounds="true" translateY="10.0" />
+            <Label fx:id="label1" prefHeight="28.0" prefWidth="241.0" text="Label" textAlignment="CENTER">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn1_event" mnemonicParsing="false" onAction="#affichage_1" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #545871;" text="En savoir plus " textAlignment="CENTER" textFill="WHITE" translateY="10.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+               </effect>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000030" height="92.93" radius="31.0725" spread="0.42" width="33.36" />
+         </effect>
+      </VBox>
+      <VBox fx:id="vbox3" alignment="TOP_CENTER" layoutX="76.0" layoutY="405.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="355.0" spacing="6.0" style="-fx-border-radius: 0; -fx-background-color: #FFFFFF;" stylesheets="@event.css">
+         <children>
+            <ImageView fx:id="image3" fitHeight="140.0" fitWidth="245.0" nodeOrientation="INHERIT" pickOnBounds="true" translateY="10.0" />
+            <Label fx:id="label3" prefHeight="28.0" prefWidth="241.0" text="Label" textAlignment="CENTER" translateY="20.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn3_event" mnemonicParsing="false" onAction="#affichage_3" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #545871;" text="En savoir plus " textAlignment="CENTER" textFill="WHITE" translateY="20.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+               </effect>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000030" height="92.93" radius="31.0725" spread="0.42" width="33.36" />
+         </effect>
+      </VBox>
+      <VBox fx:id="vbox4" alignment="TOP_CENTER" layoutX="490.0" layoutY="405.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="257.0" prefWidth="355.0" spacing="6.0" style="-fx-border-radius: 0; -fx-background-color: #FFFFFF;" stylesheets="@event.css">
+         <children>
+            <ImageView fx:id="image4" fitHeight="140.0" fitWidth="244.0" nodeOrientation="INHERIT" pickOnBounds="true" translateY="10.0" />
+            <Label fx:id="label4" prefHeight="28.0" prefWidth="241.0" text="Label" textAlignment="CENTER" translateY="20.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn4_event" mnemonicParsing="false" onAction="#affichage_4" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #545871;" text="En savoir plus " textAlignment="CENTER" textFill="WHITE" translateY="20.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+               </effect>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000030" height="92.93" radius="31.0725" spread="0.42" width="33.36" />
+         </effect>
+      </VBox>
+      <ImageView fx:id="eventsuivant" fitHeight="49.0" fitWidth="50.0" layoutX="928.0" layoutY="363.0" onMouseClicked="#suivant_event" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/suivant.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="eventprecedent" fitHeight="49.0" fitWidth="50.0" layoutX="27.0" layoutY="356.0" onMouseClicked="#event_precedent" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../ressources/precedent.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="rechercheBar" focusColor="#d1d1d1" layoutX="776.0" layoutY="19.0" prefHeight="41.0" prefWidth="192.0" promptText="Recherche Ici..." styleClass="search-box" stylesheets="@styles.css" unFocusColor="#d1d1d1" />
+      <VBox fx:id="vbox2" alignment="TOP_CENTER" layoutX="490.0" layoutY="88.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="250.0" prefWidth="355.0" spacing="6.0" style="-fx-border-radius: 0; -fx-background-color: #FFFFFF;" stylesheets="@event.css">
+         <children>
+            <ImageView fx:id="image2" fitHeight="140.0" fitWidth="245.0" nodeOrientation="INHERIT" pickOnBounds="true" translateY="10.0" />
+            <Label fx:id="label2" prefHeight="28.0" prefWidth="241.0" text="Label" textAlignment="CENTER" translateY="20.0">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="btn2_event" mnemonicParsing="false" onAction="#affichage_2" prefHeight="26.0" prefWidth="146.0" style="-fx-background-color: #545871;" text="En savoir plus " textAlignment="CENTER" textFill="WHITE" translateY="20.0">
+               <font>
+                  <Font name="Century Gothic Bold" size="17.0" />
+               </font>
+               <effect>
+                  <DropShadow color="#00000080" height="54.43" radius="20.2575" width="28.6" />
+               </effect>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <effect>
+            <DropShadow blurType="GAUSSIAN" color="#00000030" height="92.93" radius="31.0725" spread="0.42" width="33.36" />
+         </effect>
+      </VBox>
+      <Button fx:id="ajouter_user" layoutX="66.0" layoutY="31.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="28.0" prefWidth="192.0" styleClass="blue-btn" stylesheets="@styles.css" text="Ajouter évenement " />
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidev.controllers.MailinterfaceController">
+   <children>
+      <AnchorPane layoutX="48.0" layoutY="36.0" prefHeight="408.0" prefWidth="589.0">
+         <children>
+            <Label layoutX="25.0" layoutY="14.0" text="Nouveau message ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="destinataire" layoutX="133.0" layoutY="52.0" prefHeight="25.0" prefWidth="318.0" />
+            <Label layoutX="40.0" layoutY="64.0" text="A : " />
+            <Label layoutX="36.0" layoutY="109.0" text="Objet :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="objet" layoutX="135.0" layoutY="97.0" prefHeight="25.0" prefWidth="318.0" />
+            <JFXButton fx:id="envoyermail" layoutX="75.0" layoutY="361.0" onAction="#EnvoyerMail" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #234b86;" text="Envoyer " />
+            <TextArea fx:id="corpdumail" layoutX="101.0" layoutY="134.0" prefHeight="161.0" prefWidth="370.0" />
+            <JFXButton layoutX="75.0" layoutY="314.0" onAction="#importerimage" prefHeight="25.0" prefWidth="173.0" style="-fx-background-color: #234b86;" text="Importer une image " />
+            <Label fx:id="image" layoutX="264.0" layoutY="310.0" prefHeight="25.0" prefWidth="133.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

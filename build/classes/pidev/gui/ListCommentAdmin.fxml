@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="holderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="481.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidev.controllers.ListCommentAdminController">
+   <children>
+      <Label layoutX="216.0" layoutY="49.0" text="Liste des commentaires ">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableview" layoutX="36.0" layoutY="109.0" prefHeight="302.0" prefWidth="526.0" stylesheets="@styles.css">
+        <columns>
+          <TableColumn fx:id="id_event" prefWidth="101.0" text="ID_event" />
+          <TableColumn fx:id="id_user" prefWidth="94.0" text="ID_user" />
+            <TableColumn fx:id="commentaire" prefWidth="330.0" text="Commentaire" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="avr" prefHeight="598.0" prefWidth="891.0"  xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.BarechartController">
+  
+    <children>
+        <BarChart fx:id="BarChart" layoutX="158.0" layoutY="95.0" prefHeight="408.0" prefWidth="632.0" title="Evaluations">
+            <xAxis>
+                <CategoryAxis side="BOTTOM" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis side="LEFT" />
+            </yAxis>
+        </BarChart>
+        <JFXButton fx:id="LOAD" layoutX="158.0" layoutY="56.0" onAction="#LOAD" text="LOAD" />
+    </children>
+</AnchorPane>

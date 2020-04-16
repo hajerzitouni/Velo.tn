@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane dividerPositions="0.5" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.MapController">
+   <items>
+      <VBox fx:id="root_vbox" prefHeight="590.0" prefWidth="450.0" stylesheets="@../ressources/mape.css">
+         <children>
+            <HBox prefHeight="83.0" prefWidth="296.0">
+               <children>
+                  <Label />
+                  <Button mnemonicParsing="false" onAction="#zoomOut" text="-" />
+                  <Slider fx:id="zoom_slider" />
+                  <Button mnemonicParsing="false" onAction="#zoomIn" text="+" />
+               </children>
+            </HBox>
+            <HBox prefHeight="109.0" prefWidth="296.0">
+               <children>
+                  <ToggleButton fx:id="contrast_togglebutton" mnemonicParsing="false" onAction="#stylingContrast" text="high contrast" />
+                  <ToggleButton fx:id="size_togglebutton" mnemonicParsing="false" onAction="#stylingSizing" text="large ui" />
+               </children>
+            </HBox>
+            <ListView fx:id="map_listview" onMouseClicked="#listClicked" prefHeight="398.0" prefWidth="226.0" />
+         </children>
+      </VBox>
+      <ScrollPane fx:id="map_scrollpane" prefHeight="200.0" prefWidth="200.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Pane layoutX="-15.0" layoutY="-15.0">
+                     <children>
+                        <ImageView>
+                           <image>
+                              <Image url="@../ressources/map.png" />
+                           </image>
+                        </ImageView>
+                        <MenuButton fx:id="map_pin" layoutX="71.0" layoutY="165.0" mnemonicParsing="false" styleClass="map-pin" stylesheets="@../ressources/mape.css" text="MenuButton">
+                          <items>
+                            <MenuItem fx:id="pin_info" mnemonicParsing="false" text="Action 1" />
+                          </items>
+                        </MenuButton>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+   </items>
+</SplitPane>

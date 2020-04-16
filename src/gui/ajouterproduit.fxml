@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ajouterproduitController">
+   <children>
+      <AnchorPane fx:id="btnAjouter" layoutX="160.0" layoutY="22.0" prefHeight="390.0" prefWidth="576.0">
+         <children>
+            <Label layoutX="106.0" layoutY="165.0" text="Nom " />
+            <Label layoutX="43.0" layoutY="131.0" />
+            <Label layoutX="214.0" layoutY="56.0" text="Ajouter Produit" textFill="#0c8bae">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="107.0" layoutY="123.0" text="Catégorie" />
+            <Label layoutX="104.0" layoutY="198.0" text="Quantité" />
+            <Button id="btnAjouter" fx:id="btnAjout" layoutX="137.0" layoutY="331.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="25.0" prefWidth="247.0" style="-fx-background-color: #52eb85;" text="Ajouter produit" />
+            <Label layoutX="104.0" layoutY="239.0" prefHeight="17.0" prefWidth="67.0" text="prix" />
+            <TextField fx:id="tfnbrcomp1" layoutX="186.0" layoutY="235.0" />
+            <TextField fx:id="tfnbrcomp11" layoutX="186.0" layoutY="194.0" />
+            <TextField fx:id="tfnbrcomp111" layoutX="186.0" layoutY="161.0" />
+            <Button fx:id="btnImportImage" layoutX="229.0" layoutY="273.0" mnemonicParsing="false" onAction="#importer" style="-fx-background-color: #0c8bae;" text="import" />
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="200.0" layoutX="352.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true" />
+            <MenuButton fx:id="tfnamecomp" layoutX="186.0" layoutY="119.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Catégorie">
+              <items>
+                <MenuItem fx:id="cat1" mnemonicParsing="false" text="Vélos" />
+                <MenuItem fx:id="cat2" mnemonicParsing="false" text="Accessoires" />
+              </items>
+            </MenuButton>
+            
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

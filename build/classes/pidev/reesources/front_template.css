@@ -1,0 +1,44 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+
+}
+
+#product-list-view JFXButton {
+    -fx-text-fill: white;
+    -fx-font-size: 32px;
+    -fx-background-color: green;
+    -fx-padding: 5px;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+}
+
+#product-list-view #rootContainer{
+    -fx-font-size: 15px;
+}
+
+
+#product-list-view #buttonContainer {
+    -fx-alignment: CENTER;
+}
+
+#reviewList JFXButton{
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-color: green;
+    -fx-padding: 5px;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+}
+
+.recList JFXButton{
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-background-color: green;
+    -fx-padding: 5px;
+    -fx-border-insets: 2px;
+    -fx-background-insets: 2px;
+}

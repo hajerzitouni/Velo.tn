@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="561.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AddCastingController">
+   <children>
+      <AnchorPane fx:id="btnAjouter" layoutX="67.0" layoutY="25.0" prefHeight="493.0" prefWidth="482.0" style="-fx-background-color: #C0C0C0;">
+         <children>
+            <Label layoutX="25.0" layoutY="99.0" text="Type de votre probleme" textFill="#403e3e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label layoutX="25.0" layoutY="164.0" text="Marque de velo" textFill="#403e3e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <TextField fx:id="tfnamecast" layoutX="247.0" layoutY="100.0" />
+            <Label layoutX="224.0" layoutY="82.0" textFill="#9b3dd9">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="226.0" text="description de prob" textFill="#403e3e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <Label layoutX="126.0" layoutY="26.0" text="Decrivez votre problem" textFill="#f56714">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tfstartcast" layoutX="247.0" layoutY="165.0" />
+            <Button fx:id="btnAjout" layoutX="150.0" layoutY="386.0" mnemonicParsing="false" onAction="#ajouter2" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: green;" text="Add" textFill="WHITE" />
+            <Button fx:id="consulter" layoutX="305.0" layoutY="386.0" mnemonicParsing="false" onAction="#consulter1" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: #F77E13;" text="Retour" textFill="WHITE" />
+            <Label layoutX="25.0" layoutY="325.0" text="Ville" textFill="#403e3e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font></Label>
+            <TextField fx:id="tfendcast1" layoutX="247.0" layoutY="326.0" prefHeight="25.0" prefWidth="149.0" />
+            <TextArea fx:id="tfendcast" layoutX="247.0" layoutY="217.0" prefHeight="88.0" prefWidth="149.0" />
+            <ImageView fitHeight="27.0" fitWidth="39.0" layoutX="78.0" layoutY="26.0">
+               <image>
+                  <Image url="@../ressources/55.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="27.0" layoutX="282.0" layoutY="390.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../ressources/22.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="24.0" layoutX="114.0" layoutY="390.0">
+               <image>
+                  <Image url="@../ressources/23.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="MAP" layoutX="4.0" layoutY="436.0" mnemonicParsing="false" onAction="#MAP" prefHeight="25.0" prefWidth="74.0" style="-fx-background-color: green;" text="MAP" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

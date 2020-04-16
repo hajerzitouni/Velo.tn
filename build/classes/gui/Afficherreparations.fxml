@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="avr" prefHeight="558.0" prefWidth="723.0" style="-fx-background-color: #C0C0C0;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.AffichereparationsController">
+   <children>
+      <TableView fx:id="table" layoutX="235.0" layoutY="181.0" prefHeight="303.0" prefWidth="467.0">
+        <columns>
+          <TableColumn fx:id="namecomp" prefWidth="117.0" text="Nom" />
+            <TableColumn fx:id="start" prefWidth="112.0" text="Date de début" />
+            <TableColumn fx:id="id" prefWidth="75.0" text="id" visible="false" />
+            <TableColumn fx:id="end" prefWidth="128.0" text="Date de fin" />
+            <TableColumn fx:id="nbrparticipant" prefWidth="107.0" text="Prix" />
+        </columns>
+      </TableView>
+      <Button fx:id="nouveau" layoutX="25.0" layoutY="219.0" mnemonicParsing="false" onAction="#nouveau" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="Ajouter reparation" textFill="#f77216">
+         <font>
+            <Font size="13.0" />
+         </font></Button>
+      <Label layoutX="362.0" layoutY="32.0" text="Réparation" textFill="#f77216">
+         <font>
+            <Font name="System Bold Italic" size="34.0" />
+         </font>
+      </Label>
+      <Button fx:id="delete" layoutX="25.0" layoutY="372.0" mnemonicParsing="false" onAction="#Delete" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="Effacer reparation" textFill="#f77216" />
+      <Button fx:id="nouveau1" layoutX="551.0" layoutY="119.0" mnemonicParsing="false" onAction="#nouveau" prefHeight="26.0" prefWidth="119.0" text="Rechercher" />
+      <TextField fx:id="recherche" layoutX="235.0" layoutY="119.0" onAction="#recherche" prefHeight="25.0" prefWidth="285.0" promptText="Rechercher" />
+      <Button fx:id="delete1" layoutX="25.0" layoutY="296.0" mnemonicParsing="false" onAction="#update1" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: black; -fx-background-radius: 20;" text="Modifier reparation" textFill="#f77216">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Button>
+      <ImageView fitHeight="146.0" fitWidth="274.0" layoutY="-14.0">
+         <image>
+            <Image url="@../ressources/100.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="163.0" layoutY="381.0">
+         <image>
+            <Image url="@../ressources/moins.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="163.0" layoutY="228.0">
+         <image>
+            <Image url="@../ressources/plus.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="163.0" layoutY="306.0">
+         <image>
+            <Image url="@../ressources/registericon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="nouveau2" layoutX="25.0" layoutY="441.0" mnemonicParsing="false" onAction="#stat" prefHeight="43.0" prefWidth="132.0" style="-fx-background-color: #000000; -fx-background-radius: 20;" text="stat" textFill="#f77216">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="26.0" fitWidth="32.0" layoutX="163.0" layoutY="450.0">
+         <image>
+            <Image url="@../../../../../Desktop/PIDEV2020/ico/fxml/icone/stat1.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

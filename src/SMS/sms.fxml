@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SMS.SMSController">
+   <children>
+      <Text fill="#0c8bae" layoutX="223.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Envoyer SMS" wrappingWidth="154.13671875">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="num" layoutX="138.0" layoutY="94.0" prefHeight="25.0" prefWidth="300.0" promptText="Numéro" />
+      <TextField fx:id="msg" layoutX="138.0" layoutY="131.0" prefHeight="161.0" prefWidth="300.0" promptText="Message" />
+      <Button  fx:id="btn" layoutX="218.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="164.0" style="-fx-background-color: #52eb85;" onAction="#ajouter" text="Envoyer" />
+      <Text layoutX="77.0" layoutY="111.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero" wrappingWidth="78.13671875" />
+      <Text layoutX="77.0" layoutY="216.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message" wrappingWidth="60.13671875" />
+   </children>
+</AnchorPane>

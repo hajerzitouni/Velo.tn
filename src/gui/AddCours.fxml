@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.CoursController">
+   <children>
+      <AnchorPane layoutY="-1.0" prefHeight="645.0" prefWidth="156.0" style="-fx-background-color: #3D4956;">
+         <children>
+            <Label layoutX="22.0" layoutY="14.0" text="Velo.tn" textFill="#f5f2f2">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="btnAjouter" layoutX="160.0" layoutY="-1.0" prefHeight="645.0" prefWidth="754.0">
+         <children>
+            <Label layoutX="42.0" layoutY="126.0" text="Niveau" />
+            <Label layoutX="44.0" layoutY="190.0" text="Date" />
+            <Label layoutX="226.0" layoutY="28.0" prefHeight="52.0" prefWidth="302.0" text="Ajouter un cours" textFill="#f7b40f">
+               <font>
+                  <Font name="Bradley Hand ITC" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="241.0" text="Lieu" />
+            <Label layoutX="46.0" layoutY="289.0" text="Prix " />
+            <Label layoutX="36.0" layoutY="14.0" text="Cours">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <JFXDatePicker fx:id="tfstartcomp" layoutX="210.0" layoutY="175.0" prefHeight="31.0" prefWidth="373.0" promptText="Date" />
+            <JFXButton fx:id="image" buttonType="RAISED" layoutX="27.0" layoutY="364.0" onAction="#image" prefHeight="37.0" prefWidth="183.0" style="-fx-background-color: #F39C12;" text="Importer une image" textFill="WHITE">
+               <font>
+                  <Font name="Roboto Bold" size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="BtnAjout" buttonType="RAISED" layoutX="102.0" layoutY="548.0" onAction="#ajouter" prefHeight="54.0" prefWidth="312.0" ripplerFill="WHITE" style="-fx-background-color: #2196F3;" text="Ajouter" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="consulter" buttonType="RAISED" layoutX="643.0" layoutY="565.0" onAction="#consulter" ripplerFill="WHITE" style="-fx-background-color: #75D032; -fx-border-radius: 100%;" text="Annuler" textFill="WHITE">
+               <font>
+                  <Font name="Gadugi" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="tfnamecomp" layoutX="206.0" layoutY="121.0" prefHeight="25.0" prefWidth="342.0" promptText="niveau" unFocusColor="#4d4d4d" />
+            <JFXTextField fx:id="tfnbrcomp1" layoutX="206.0" layoutY="236.0" prefHeight="25.0" prefWidth="342.0" promptText="Lieu" unFocusColor="#4d4d4d" />
+            <JFXTextField fx:id="tfnbrcomp" layoutX="205.0" layoutY="284.0" prefHeight="31.0" prefWidth="342.0" promptText="Prix" unFocusColor="#4d4d4d" />
+            <ImageView fx:id="imageViewAdd" fitHeight="110.0" fitWidth="359.0" layoutX="284.0" layoutY="364.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
